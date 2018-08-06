@@ -19,7 +19,7 @@ def lambda_handler(event, context):
     
         # Get all volumes in all regions  
         result = ec2.describe_volumes()
-        
+        # scan all regions 
         for volume in result['Volumes']:
             
             backup = 'Yes'
