@@ -21,10 +21,10 @@ def lambda_handler(event, context):
     # Get current timestamp in UTC
     now = datetime.now()
 
-	# AWS Account ID
-	#account_id = 'xxxxxxxxx'
+    # AWS Account ID
+    #account_id = 'xxxxxxxxx'
 	
-	# Define retention period in days
+    # Define retention period in days
     retention_days = 15
     
     # Create EC2 client
