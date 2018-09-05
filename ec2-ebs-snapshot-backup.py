@@ -31,7 +31,7 @@ def lambda_handler(event, context):
                     
             # Skip volume if Backup tag is No
             if backup == 'No':
-                break
+               continue
             
             print "Backing up %s in %s" % (volume['VolumeId'], volume['AvailabilityZone'])
         
