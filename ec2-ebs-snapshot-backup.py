@@ -24,7 +24,7 @@ def lambda_handler(event, context):
             
             backup = 'Yes'
             
-            # Get volume tag of Backup if it exists
+            # Get volume tag of Backup if it exists, backup volume has been set tag's value as Yes
             for tag in volume['Tags']:
                 if tag['Key'] == 'Backup':
                     backup = tag.get('Value')
