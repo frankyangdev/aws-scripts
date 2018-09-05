@@ -24,8 +24,6 @@ def lambda_handler(event, context):
 	# AWS Account ID
 	#account_id = 'xxxxxxxxx'
 	
-
-	
 	# Define retention period in days
     retention_days = 15
     
@@ -44,7 +42,7 @@ def lambda_handler(event, context):
         ec2 = boto3.client('ec2', region_name=reg)
         
         # Filtering by snapshot timestamp comparison is not supported
-        # So we grab all snapshot id's
+        # set account_id which is from your AWS account id
         result = ec2.describe_snapshots( OwnerIds=[account_id] )
     
         for snapshot in result['Snapshots']:
