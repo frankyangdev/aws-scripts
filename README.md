@@ -14,6 +14,9 @@ This script is written with Python and applied in lamda function and set trigger
 
 i.e Schedule Cron expression 55 16 */10 * ? *  every 10 days to create ebs snapshots
 
+3. ec2-tagged-stop-lambda.py
+This script will stop ec2 instance according tag value.
+
 
 
 
