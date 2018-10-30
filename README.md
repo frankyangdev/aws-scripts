@@ -1,5 +1,5 @@
 # aws-scripts
-scripts for AWS back-end management
+scripts sample for AWS back-end management
 This repository for AWS scripts with Python Boto3 to do regular EC2 EBS backup and other common instance operation
 
 1. ec2-ebs-delete-snapshos.py
